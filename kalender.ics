@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//uni-kalender//Friedolin Sync//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Uni Jena
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT2H
+X-PUBLISHED-TTL:PT2H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:260537472906@friedolin.uni-jena.de
+DTSTAMP:20261019T214715Z
+DTSTART;TZID=Europe/Berlin:20261019T140000
+DTEND;TZID=Europe/Berlin:20261019T160000
+RRULE:FREQ=WEEKLY;UNTIL=20270208T235900Z;BYDAY=MO
+EXDATE;TZID=Europe/Berlin:20261221T140000,20261228T140000
+SUMMARY:Was ist ein Künstler? (Vorlesung)
+LOCATION:Fürstengraben 1\, HS 024
+DESCRIPTION:Vorlesung · Nr. 159116\nHybrid-Format\nZoom-Link:\nhttps://uni
+ -jena-de.zoom-x.de/j/69208324939\nKenncode: 831419\n\nMehr Infos in Friedo
+ lin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=
+ init&vmfile=no&publishid=260537&moduleCall=webInfo&publishConfFile=webInfo
+ &publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=260537&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261019T214715Z
+DTSTART;TZID=Europe/Berlin:20261020T100000
+DTEND;TZID=Europe/Berlin:20261020T120000
+RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
+EXDATE;TZID=Europe/Berlin:20261222T100000,20261229T100000
+SUMMARY:Film & Medienkunst – Tutorium
+LOCATION:Ernst-Abbe-Platz 8\, Seminarraum 208
+DESCRIPTION:Basismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208
+ \, Ernst-Abbe-Platz 8\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-j
+ ena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=2598
+ 42&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261019T214715Z
+DTSTART;TZID=Europe/Berlin:20261020T120000
+DTEND;TZID=Europe/Berlin:20261020T140000
+RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
+EXDATE;TZID=Europe/Berlin:20261222T120000,20261229T120000
+SUMMARY:Film & Medienkunst – Seminar
+LOCATION:Ernst-Abbe-Platz 8\, Raum 208
+DESCRIPTION:Basismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, 
+ EAP 8\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver
+ /rds?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=we
+ bInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:258756474860@friedolin.uni-jena.de
+DTSTAMP:20261019T214715Z
+DTSTART;TZID=Europe/Berlin:20261020T160000
+DTEND;TZID=Europe/Berlin:20261020T180000
+RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
+EXDATE;TZID=Europe/Berlin:20261222T160000,20261229T160000
+SUMMARY:Marketing-Management (VL/Ü)
+LOCATION:Carl-Zeiß-Straße 3\, HS 1 (Abbe-Hörsaal)
+DESCRIPTION:Vorlesung/Übung · Nr. 46327\n\nMehr Infos in Friedolin:\nhttp
+ s://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfil
+ e=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&publishSu
+ bDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:258756474861@friedolin.uni-jena.de
+DTSTAMP:20261019T214715Z
+DTSTART;TZID=Europe/Berlin:20261028T160000
+DTEND;TZID=Europe/Berlin:20261028T180000
+RRULE:FREQ=WEEKLY;UNTIL=20270210T235900Z;BYDAY=WE
+EXDATE;TZID=Europe/Berlin:20261223T160000,20261230T160000
+SUMMARY:Marketing-Management (VL/Ü)
+LOCATION:Carl-Zeiß-Straße 3\, HS 2
+DESCRIPTION:Vorlesung/Übung · Nr. 46327\n\nMehr Infos in Friedolin:\nhttp
+ s://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfil
+ e=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&publishSu
+ bDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+END:VCALENDAR
