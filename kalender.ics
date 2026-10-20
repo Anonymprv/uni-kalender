@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:260537472906@friedolin.uni-jena.de
-DTSTAMP:20261019T214715Z
+DTSTAMP:20261020T085504Z
 DTSTART;TZID=Europe/Berlin:20261019T140000
 DTEND;TZID=Europe/Berlin:20261019T160000
 RRULE:FREQ=WEEKLY;UNTIL=20270208T235900Z;BYDAY=MO
@@ -44,7 +44,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:259842478771@friedolin.uni-jena.de
-DTSTAMP:20261019T214715Z
+DTSTAMP:20261020T085504Z
 DTSTART;TZID=Europe/Berlin:20261020T100000
 DTEND;TZID=Europe/Berlin:20261020T120000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
@@ -61,7 +61,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:259842472921@friedolin.uni-jena.de
-DTSTAMP:20261019T214715Z
+DTSTAMP:20261020T085504Z
 DTSTART;TZID=Europe/Berlin:20261020T120000
 DTEND;TZID=Europe/Berlin:20261020T140000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
@@ -78,7 +78,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474860@friedolin.uni-jena.de
-DTSTAMP:20261019T214715Z
+DTSTAMP:20261020T085504Z
 DTSTART;TZID=Europe/Berlin:20261020T160000
 DTEND;TZID=Europe/Berlin:20261020T180000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
@@ -94,8 +94,38 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
  blishSubDir=veranstaltung
 END:VEVENT
 BEGIN:VEVENT
+UID:258756482652@friedolin.uni-jena.de
+DTSTAMP:20261020T085504Z
+DTSTART;TZID=Europe/Berlin:20261021T160000
+DTEND;TZID=Europe/Berlin:20261021T180000
+SUMMARY:Marketing-Management (VL/Ü)
+LOCATION:
+DESCRIPTION:Vorlesung/Übung · Nr. 46327\n\nMehr Infos in Friedolin:\nhttp
+ s://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfil
+ e=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&publishSu
+ bDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:258756482653@friedolin.uni-jena.de
+DTSTAMP:20261020T085504Z
+DTSTART;TZID=Europe/Berlin:20261021T160000
+DTEND;TZID=Europe/Berlin:20261021T180000
+SUMMARY:Marketing-Management (VL/Ü)
+LOCATION:
+DESCRIPTION:Vorlesung/Übung · Nr. 46327\n\nMehr Infos in Friedolin:\nhttp
+ s://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfil
+ e=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&publishSu
+ bDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=258756&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
 UID:258756474861@friedolin.uni-jena.de
-DTSTAMP:20261019T214715Z
+DTSTAMP:20261020T085504Z
 DTSTART;TZID=Europe/Berlin:20261028T160000
 DTEND;TZID=Europe/Berlin:20261028T180000
 RRULE:FREQ=WEEKLY;UNTIL=20270210T235900Z;BYDAY=WE
