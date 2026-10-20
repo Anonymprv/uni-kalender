@@ -162,7 +162,17 @@ def build(config, offline=None):
         if not events:
             print(f"Hinweis: Kurs {kid} hat (noch) keine Termine", file=sys.stderr)
 
+        # Doppelt eingetragene Termine (gleiche Zeit, gleicher Rhythmus) nur einmal
+        # übernehmen – bevorzugt den Eintrag mit Raumangabe.
+        events.sort(key=lambda e: not e.get("LOCATION", "").strip())
+        gesehen = set()
+
         for ev in events:
+            schluessel = (ev.get("DTSTART", ""), ev.get("DTEND", ""), ev.get("RRULE", ""))
+            if schluessel in gesehen:
+                print(f"Hinweis: doppelter Termin in Kurs {kid} übersprungen ({ev.get('UID', '')})", file=sys.stderr)
+                continue
+            gesehen.add(schluessel)
             uid = ev.get("UID", "")
             tid = uid[len(kid):] if uid.startswith(kid) else uid
             t = termine.get(tid, {})
