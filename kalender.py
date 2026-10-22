@@ -158,8 +158,53 @@ def ort(s):
     return re.sub(r"\s+-\s+", ", ", s.strip())
 
 
+def lade_eigene_ausfaelle():
+    """ausfaelle.txt: eine Zeile pro Ausfall:  27.10.2026 | Marketing | laut Moodle
+    Der mittlere Teil ist ein Stück des Titels im Kalender (Groß/klein egal)."""
+    datei = HERE / "ausfaelle.txt"
+    eintraege = []
+    if not datei.exists():
+        return eintraege
+    for nr, zeile in enumerate(datei.read_text(encoding="utf-8").splitlines(), 1):
+        zeile = zeile.strip()
+        if not zeile or zeile.startswith("#"):
+            continue
+        teile = [x.strip() for x in zeile.split("|")]
+        m = re.fullmatch(r"(\d{1,2})\.(\d{1,2})\.(\d{2,4})", teile[0])
+        if not m or len(teile) < 2 or not teile[1]:
+            print(f"::warning::ausfaelle.txt Zeile {nr} nicht verstanden: {zeile}")
+            continue
+        d, mth, y = m.groups()
+        y = ("20" + y) if len(y) == 2 else y
+        grund = teile[2] if len(teile) > 2 and teile[2] else "selbst eingetragen"
+        eintraege.append((f"{y}{int(mth):02d}{int(d):02d}", teile[1], grund))
+    return eintraege
+
+
+def findet_statt_am(ev, datum):
+    """Liegt ein Termin dieses (ggf. wöchentlichen) Eintrags auf `datum` (JJJJMMTT)?"""
+    start = ev.get("DTSTART", "")[:8]
+    if "RRULE" not in ev:
+        return start == datum
+    rr = dict(p.split("=", 1) for p in ev["RRULE"].split(";") if "=" in p)
+    if rr.get("FREQ") != "WEEKLY":
+        return start == datum
+    try:
+        d0 = datetime.strptime(start, "%Y%m%d")
+        d = datetime.strptime(datum, "%Y%m%d")
+    except ValueError:
+        return False
+    until = rr.get("UNTIL", "")[:8]
+    if d < d0 or (until and datum > until):
+        return False
+    tage = (d - d0).days
+    return tage % (7 * int(rr.get("INTERVAL", "1"))) == 0
+
+
 def build(config, offline=None, alt=""):
     vevents = []
+    eigene_ausfaelle = lade_eigene_ausfaelle()
+    benutzt = set()
     for kurs in config["kurse"]:
         kid = str(kurs["id"])
         gruppe = kurs.get("gruppe", 0)
@@ -215,6 +260,10 @@ def build(config, offline=None, alt=""):
             start_t = start[8:] if len(start) >= 15 else "T000000"
             end_t = end[8:] if len(end) >= 15 else start_t
             ausfall = {d: why for d, why in t.get("ausfall", [])}
+            for datum, suchtext, grund in eigene_ausfaelle:
+                if suchtext.lower() in titel.lower() and findet_statt_am(ev, datum):
+                    ausfall.setdefault(datum, grund)
+                    benutzt.add((datum, suchtext))
             exdates = [x for x in ev.get("EXDATE", "").split(",") if x.strip()]
             exdates = [x for x in exdates if x[:8] not in ausfall]
 
@@ -237,7 +286,7 @@ def build(config, offline=None, alt=""):
             vevents.append(lines)
 
             for d, why in sorted(ausfall_hier.items()):
-                info_txt = ["⚠️ Dieser Termin fällt laut Friedolin aus."]
+                info_txt = ["⚠️ Dieser Termin fällt aus."]
                 if why:
                     info_txt.append(f"Grund/Hinweis: {why}")
                 info_txt += ["", "Mehr Infos in Friedolin:", link]
@@ -251,6 +300,9 @@ def build(config, offline=None, alt=""):
 
     if not vevents:
         raise RuntimeError("Keine Termine gefunden – Kalender wird nicht überschrieben")
+    for datum, suchtext, _ in eigene_ausfaelle:
+        if (datum, suchtext) not in benutzt:
+            print(f"::warning::ausfaelle.txt: kein Termin '{suchtext}' am {datum[6:]}.{datum[4:6]}.{datum[:4]} gefunden")
 
     head = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//uni-kalender//Friedolin Sync//DE",
             "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
