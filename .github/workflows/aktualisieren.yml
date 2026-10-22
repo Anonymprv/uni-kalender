@@ -2,8 +2,9 @@ name: Kalender aktualisieren
 
 on:
   schedule:
-    # alle 2 Stunden (Zeiten in UTC)
-    - cron: "23 */2 * * *"
+    # alle 2 Stunden (Zeiten in UTC). Der Lauf um 0 Uhr UTC (= 1–2 Uhr nachts
+    # in Jena) entfällt, weil Friedolin nachts oft wegen Wartung nicht erreichbar ist.
+    - cron: "23 2-22/2 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -19,9 +20,13 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
+      # Ist Friedolin nur kurz nicht erreichbar, bleibt der alte Kalender stehen und
+      # der Lauf gilt als erfolgreich (keine Fehler-Mail). Erst wenn 24 Stunden lang
+      # kein Abgleich geklappt hat, schlägt der Lauf fehl und GitHub schickt eine Mail.
       - name: Kalender aus Friedolin bauen
         run: python3 kalender.py
 
@@ -29,17 +34,9 @@ jobs:
         run: |
           git config user.name "kalender-bot"
           git config user.email "kalender-bot@users.noreply.github.com"
-          git add kalender.ics
+          git add kalender.ics zuletzt-ok.txt 2>/dev/null || git add kalender.ics
           if ! git diff --cached --quiet; then
             git commit -m "Kalender aktualisiert"
-          else
-            # GitHub pausiert geplante Abläufe nach 60 Tagen ohne Aktivität.
-            # Daher spätestens alle 30 Tage ein kleines Lebenszeichen.
-            last=$(git log -1 --format=%ct)
-            if [ $(( $(date +%s) - last )) -gt 2592000 ]; then
-              date -u +"%Y-%m-%dT%H:%M:%SZ" > zuletzt-geprueft.txt
-              git add zuletzt-geprueft.txt
-              git commit -m "Lebenszeichen"
-            fi
+            git pull --rebase --quiet
+            git push
           fi
-          git push
