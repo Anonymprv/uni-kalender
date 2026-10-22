@@ -1,0 +1,88 @@
+{
+  "_quelle": "Seminarplan Filmtheorie WiSe 26/27 (Prof. Dr. Bernhard Groß / Alan Bade), Stand 08.10.2026",
+  "Medienkunst – Seminar": {
+    "20.10.2026": { "thema": "Begrüßung & Einführung", "details": [
+      "Gemeinsame Begrüßung und Einführung (Seminar und Tutorium)",
+      "Überblick zu Theorien und Aufbau Seminar, Datenbank und Filmkanon, Verbindung Seminar und Tutorium"] },
+    "27.10.2026": { "thema": "Taxonomie des filmischen Universums", "details": [
+      "Film: SNOW WHITE AND THE SEVEN DWARFS (David Hand, USA 1937)",
+      "Text: Souriau, Etienne: Die Struktur des filmischen Universums und das Vokabular der Filmologie. In: montage AV 6/2, 1997, S. 140–157",
+      "Vertiefung: Kerrigan, Susan: The spectator in the film-maker: re-framing filmology through creative film-making practices. In: Journal of Media Practice 17/2-3, 2016, S. 186–198"] },
+    "03.11.2026": { "thema": "Filmanalytische Theorie", "details": [
+      "Zentraler Referenztext",
+      "Film: JEZEBEL (William Wyler, USA 1938)",
+      "Text: Kappelhoff, Hermann: Die Dauer der Empfindung. Von einer spezifischen Bewegungsdimension des Kinos. In: Bischof, Margrit et al. (Hg.): e_motion. Hamburg 2006, S. 205–220",
+      "Vertiefung: Kappelhoff, Hermann: Der Bildraum des Kinos. Modulationen einer ästhetischen Erfahrungsform. In: Koch, Gertrud (Hg.): Umwidmungen. Berlin 2005, S. 138–149"] },
+    "10.11.2026": { "thema": "Analyse-Übung I", "details": [
+      "Analyse-Übung Studierende I",
+      "Filme: Vertiefung SNOW WHITE AND THE SEVEN DWARFS & JEZEBEL",
+      "Analytische Übung zu Kappelhoffs „Die Dauer der Empfindung“, max. 2 studentische Analyse-Übungen, gemeinsame Besprechung und Fazit"] },
+    "17.11.2026": { "thema": "Dies Legendi", "details": ["Dies Legendi – kein Seminar"] },
+    "24.11.2026": { "thema": "Realismustheorie des Films", "details": [
+      "Darstellung von Realität – Referenz Kappelhoff: Bewegung im Film",
+      "Film: PAISÀ (Roberto Rossellini, Italien 1946)",
+      "Text: Kracauer, Siegfried: Theorie des Films. Die Errettung der äußeren Wirklichkeit. Frankfurt a. M., S. 84–112 sowie 461–64, 473–77 (zudem: Studium Buchgliederung)",
+      "Vertiefung: Koch, Gertrud: Raum, Zeit und Apparat. Das optische Medium, „Theorie des Films“. In: Siegfried Kracauer zur Einführung. Hamburg 2012, S. 128–150"] },
+    "01.12.2026": { "thema": "Formalistische Filmtheorie", "details": [
+      "Herstellung filmischer Realität – Referenz Kappelhoff: Bewegung des Films",
+      "Film: PANZERKREUZER POTEMKIN (Sergej Eisenstein, UdSSR 1925)",
+      "Text: Eisenstein, Sergej: Montage der Filmattraktionen. In: Bulgakowa, Oksana; Hochmuth, Dietmar (Hg.): Sergej Eisenstein. Das dynamische Quadrat. Leipzig: Reclam 1988, S. 17–45",
+      "Vertiefung: Bulgakowa, Oksana: Sergej Eisenstein – Drei Utopien: Architekturentwürfe zur Filmtheorie. Berlin: PotemkinPress 1996, S. 38–53"] },
+    "08.12.2026": { "thema": "Analyse-Übung II", "details": [
+      "Analyse-Übung Studierende II",
+      "Filme: Vertiefung PAISÀ & PANZERKREUZER POTEMKIN",
+      "Max. 3 studentische Analyse-Übungen (ca. 2 Min. Filmausschnitt + 10 Min. Analyse), gemeinsame Besprechung und Fazit"] },
+    "15.12.2026": { "thema": "Neubewertung des frühen Kinos", "details": [
+      "Spektakel – Referenz Kappelhoff: Bewegung der Zuschauer I",
+      "Filme: Kompilation früher Filme – L’ARRIVÉE D’UN TRAIN EN GARE DE LA CIOTAT (Lumière, FRA 1896), ESCAMOTAGE D’UNE DAME CHEZ ROBERT-HOUDIN (Méliès, FRA 1896), LE VOYAGE DANS LA LUNE (Méliès, FRA 1902), THE GREAT TRAIN ROBBERY (Porter, USA 1903), THE GAY SHOE CLERK (Porter, USA 1904)",
+      "Text: Gunning, Tom: Das Kino der Attraktionen. Der frühe Film, seine Zuschauer und die Avantgarde. In: Meteor. Texte zum Laufbild. Wien 1996, S. 25–34",
+      "Vertiefung: Elsaesser, Thomas: The New Film History as Media Archaeology. In: Histoires croisées des images 14/2-3, 2004, S. 75–117"] },
+    "05.01.2027": { "thema": "Feministisch-ideologiekritische Filmtheorie", "details": [
+      "Film als psychischer Apparat – Referenz Kappelhoff: Bewegung der Zuschauer II",
+      "Film: CLÉO DE 5 À 7 (Agnès Varda, FR 1962)",
+      "Text: Mulvey, Laura: Visuelle Lust und narratives Kino. In: Weissberg, Liliane (Hg.): Weiblichkeit als Maskerade. Frankfurt/Main: Fischer 1994, S. 48–65",
+      "Vertiefung: Baudry, Jean-Louis: Das Dispositiv: Metapsychologische Betrachtungen des Realitätseindrucks. In: Kursbuch Medienkultur, München: DVA 2008, S. 381–404"] },
+    "12.01.2027": { "thema": "Analyse-Übung III", "details": [
+      "Analyse-Übung Studierende III",
+      "Filme: Vertiefung Kompilation früher Filme & CLÉO DE 5 À 7",
+      "Max. 3 studentische Analyse-Übungen (ca. 2 Min. Filmausschnitt + 10 Min. Analyse), gemeinsame Besprechung und Fazit"] },
+    "19.01.2027": { "thema": "Theorie des Filmesehens", "details": [
+      "Physische Affektion – Referenz Kappelhoff: Bewegung der Zuschauer III",
+      "Film: STRANGE DAYS (Kathryn Bigelow, USA 1995)",
+      "Text: Sobchack, Vivian: Phenomenology of the Film Experience. In: The Address of the Eye. Princeton, NJ 1992, S. 3–26",
+      "Vertiefung: Bonnemann, Jens: Vivian Sobchack (*1940) – das leibliche Widerfahrnis der Filmrezeption. In: Filmtheorie. Eine Einführung. Berlin 2019, S. 273–300"] },
+    "26.01.2027": { "thema": "Fotografie und Medienkunst", "details": [
+      "Film und Zeit – Referenz Kappelhoff: Historisches Verständnis filmischer Bewegung",
+      "Film: SEDMIKRÁSKY / TAUSENDSCHÖNCHEN (Vera Chytilová, CR 1966)",
+      "Sichtung ausgewählter Fotografien der Objektdatenbank",
+      "Text: Bazin, André: Ontologie des fotografischen Bildes. In: Fischer, Robert (Hg.): Was ist Film? Berlin: Alexander Verlag 2004, S. 33–42",
+      "Vertiefung: Geimer, Peter: Kunsttheoretische Bestimmungen. Die Fotografie im System der Künste. In: Theorien der Fotografie zur Einführung. Hamburg: Junius 2009, S. 170–217"] },
+    "02.02.2027": { "thema": "Dokumentarische Filmformen", "details": [
+      "Dokumentarische und nicht-kinobasierte Filmformen",
+      "Film: WINTER ADÉ (Helke Misselwitz, DDR 1989)",
+      "Text: Steyerl, Hito: Die dokumentarische Unschärferelation. Was ist Dokumentarismus? In: Die Farbe der Wahrheit. Dokumentarismus im Kunstfeld. Wien/Berlin 2008, S. 7–17",
+      "Vertiefung: Nash, Mark: Art and Cinema: Some Critical Reflections. In: Leighton, Tanya (Hg.): Art and the Moving Image. London: Tate 2008, S. 444–459"] },
+    "09.02.2027": { "thema": "Analyse-Übung IV & Abschluss", "details": [
+      "Analyse-Übung Studierende IV / Abschluss und Fazit",
+      "Filme: Vertiefung STRANGE DAYS, SEDMIKRÁSKY, WINTER ADÉ",
+      "Max. 2 studentische Analyse-Übungen, gemeinsame Besprechung, Resümee und Prüfungsbesprechung"] }
+  },
+  "Medienkunst – Tutorium": {
+    "27.10.2026": { "thema": "Visuelle Analyse I", "details": ["Visuelle Einheiten des Films, filmanalyse.at"] },
+    "03.11.2026": { "thema": "Visuelle Analyse II", "details": ["Kamera – Technik und Ästhetik"] },
+    "10.11.2026": { "thema": "Vertiefung Visuelle Analyse I & II", "details": [] },
+    "17.11.2026": { "thema": "Wiederholung", "details": ["Seminar entfällt (Dies Legendi), Tutorium: Wiederholung"] },
+    "24.11.2026": { "thema": "Visuelle Analyse III", "details": ["Film und Bildformat, Kadrierung, Bildraum"] },
+    "01.12.2026": { "thema": "Visuelle Analyse IV & V", "details": ["Montage, Bild-/Ton-Schnitt; Räumlichkeit, Komposition, Design, Farbe I"] },
+    "08.12.2026": { "thema": "Vertiefung Visuelle Analyse III–V", "details": [
+      "Fokus Bildebene des Films und Farbe II",
+      "Text: Marschall, Susanne: Vorrede zum Farbenspiel des Kinos. In: Farbe im Kino, Marburg 2009, S. 9–42"] },
+    "15.12.2026": { "thema": "Auditive Analyse I", "details": ["Geschichte und Ästhetik"] },
+    "05.01.2027": { "thema": "Auditive Analyse II", "details": ["Tonarten, Bild-Ton-Beziehung, On/Off, Exkurs Michel Chion"] },
+    "12.01.2027": { "thema": "Vertiefung Auditive Analyse I & II", "details": [] },
+    "19.01.2027": { "thema": "Analyse Schauspiel", "details": [] },
+    "26.01.2027": { "thema": "Analyse Zeit", "details": ["Zeitkonstruktion, Filmzeit als Montagephänomen"] },
+    "02.02.2027": { "thema": "Analyse Raum", "details": ["Exkurs Mark Nash, Expanded Cinema"] },
+    "09.02.2027": { "thema": "Vertiefung Zeit und Raum", "details": ["Vertiefung Zeit und Raum sowie Klärung offener Fragen zur Analyse"] }
+  }
+}
