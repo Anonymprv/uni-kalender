@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["kurse.json", "kalender.py"]
+    paths: ["kurse.json", "kalender.py", "ausfaelle.txt"]
 
 permissions:
   contents: write
