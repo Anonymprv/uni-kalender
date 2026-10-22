@@ -32,10 +32,20 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE / "kalender.ics"
 
 
+STATUS = HERE / "zuletzt-ok.txt"   # Zeitpunkt des letzten erfolgreichen Abgleichs
+ALARM_NACH_STUNDEN = 24            # erst dann gilt eine Störung als echter Fehler
+STATUS_ALLE_STUNDEN = 6            # so oft wird zuletzt-ok.txt aufgefrischt
+
+
+class Voruebergehend(Exception):
+    """Friedolin gerade nicht erreichbar oder liefert Unvollständiges –
+    alter Kalender bleibt stehen, kein Alarm (solange es nicht zu lange dauert)."""
+
+
 # ---------------------------------------------------------------- Abruf
-def fetch(url, tries=3):
+def fetch(url, pausen=(30, 90, 180)):
     last = None
-    for i in range(tries):
+    for i in range(len(pausen) + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "uni-kalender/1.0 (privater Stundenplan-Sync)"})
             with urllib.request.urlopen(req, timeout=60) as r:
@@ -47,8 +57,9 @@ def fetch(url, tries=3):
                 return raw.decode("latin-1")
         except Exception as e:  # noqa: BLE001
             last = e
-            time.sleep(5 * (i + 1))
-    raise RuntimeError(f"Abruf fehlgeschlagen: {url} ({last})")
+            if i < len(pausen):
+                time.sleep(pausen[i])
+    raise Voruebergehend(f"Friedolin nicht erreichbar ({last})")
 
 
 def load(kind, kurs_id, gruppe, offline):
@@ -147,19 +158,24 @@ def ort(s):
     return re.sub(r"\s+-\s+", ", ", s.strip())
 
 
-def build(config, offline=None):
+def build(config, offline=None, alt=""):
     vevents = []
     for kurs in config["kurse"]:
         kid = str(kurs["id"])
         gruppe = kurs.get("gruppe", 0)
         ics = load("ics", kid, gruppe, offline)
         if "BEGIN:VCALENDAR" not in ics:
-            raise RuntimeError(f"Kurs {kid}: Antwort ist kein Kalender")
+            raise Voruebergehend(f"Kurs {kid}: Friedolin liefert keinen Kalender (Wartungsseite?)")
         info = load("html", kid, gruppe, offline)
+        if "Veranstaltungstermine" not in info:
+            raise Voruebergehend(f"Kurs {kid}: Veranstaltungsseite unvollständig (Wartungsseite?)")
         termine = parse_termine(info)
         link = INFO_URL.format(id=kid)
         events = parse_ics(ics)
         if not events:
+            if f"UID:{kid}" in alt:
+                # Bisher gab es Termine – plötzlich keine mehr ist verdächtig.
+                raise Voruebergehend(f"Kurs {kid}: Friedolin liefert plötzlich keine Termine")
             print(f"Hinweis: Kurs {kid} hat (noch) keine Termine", file=sys.stderr)
 
         # Doppelt eingetragene Termine (gleiche Zeit, gleicher Rhythmus) nur einmal
@@ -254,16 +270,36 @@ def main():
     offline = sys.argv[sys.argv.index("--offline") + 1] if "--offline" in sys.argv else None
     out = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else OUT
     config = json.loads((HERE / "kurse.json").read_text(encoding="utf-8"))
-    neu = build(config, offline)
-
     alt = out.open(encoding="utf-8", newline="").read() if out.exists() else ""
+    jetzt = datetime.now(timezone.utc)
+
+    letzter_ok = None
+    if STATUS.exists():
+        try:
+            letzter_ok = datetime.fromisoformat(STATUS.read_text(encoding="utf-8").strip())
+        except ValueError:
+            pass
+
+    try:
+        neu = build(config, offline, alt)
+    except Voruebergehend as e:
+        stunden = (jetzt - letzter_ok).total_seconds() / 3600 if letzter_ok else 0
+        if stunden < ALARM_NACH_STUNDEN:
+            print(f"::notice::{e} – Kalender bleibt beim letzten Stand, nächster Versuch beim nächsten Lauf.")
+            sys.exit(0)
+        print(f"::error::Seit {stunden:.0f} Stunden kein erfolgreicher Abgleich mehr. Letzter Fehler: {e}")
+        sys.exit(1)
+
     strip = lambda s: re.sub(r"DTSTAMP:\S+", "", s)  # noqa: E731
     if alt and strip(alt) == strip(neu):
         print("Keine Änderungen.")
-        return
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    out.write_text(neu.replace("{STAMP}", stamp), encoding="utf-8", newline="")
-    print(f"Kalender aktualisiert: {out.name} ({neu.count('BEGIN:VEVENT')} Einträge)")
+    else:
+        stamp = jetzt.strftime("%Y%m%dT%H%M%SZ")
+        out.write_text(neu.replace("{STAMP}", stamp), encoding="utf-8", newline="")
+        print(f"Kalender aktualisiert: {out.name} ({neu.count('BEGIN:VEVENT')} Einträge)")
+
+    if not offline and (letzter_ok is None or (jetzt - letzter_ok).total_seconds() > STATUS_ALLE_STUNDEN * 3600):
+        STATUS.write_text(jetzt.isoformat(timespec="seconds") + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
