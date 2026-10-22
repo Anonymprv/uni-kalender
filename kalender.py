@@ -181,6 +181,33 @@ def lade_eigene_ausfaelle():
     return eintraege
 
 
+def lade_sitzungen():
+    """sitzungen.json: Inhalte einzelner Sitzungen (z. B. aus einem Seminarplan).
+    {"<Teil des Titels>": {"TT.MM.JJJJ": {"thema": "...", "details": ["Zeile", ...]}}}"""
+    datei = HERE / "sitzungen.json"
+    if not datei.exists():
+        return []
+    try:
+        daten = json.loads(datei.read_text(encoding="utf-8"))
+    except ValueError as e:
+        print(f"::warning::sitzungen.json nicht lesbar ({e}) – wird ignoriert")
+        return []
+    eintraege = []
+    for suchtext, termine in daten.items():
+        if suchtext.startswith("_") or not isinstance(termine, dict):
+            continue
+        for datum, inhalt in termine.items():
+            m = re.fullmatch(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", datum.strip())
+            if not m:
+                print(f"::warning::sitzungen.json: Datum '{datum}' nicht verstanden")
+                continue
+            d, mth, y = m.groups()
+            details = inhalt.get("details", []) if isinstance(inhalt, dict) else []
+            thema = inhalt.get("thema", "") if isinstance(inhalt, dict) else str(inhalt)
+            eintraege.append((f"{y}{int(mth):02d}{int(d):02d}", suchtext, thema, list(details)))
+    return eintraege
+
+
 def findet_statt_am(ev, datum):
     """Liegt ein Termin dieses (ggf. wöchentlichen) Eintrags auf `datum` (JJJJMMTT)?"""
     start = ev.get("DTSTART", "")[:8]
@@ -205,6 +232,8 @@ def build(config, offline=None, alt=""):
     vevents = []
     eigene_ausfaelle = lade_eigene_ausfaelle()
     benutzt = set()
+    sitzungen = lade_sitzungen()
+    benutzt_s = set()
     for kurs in config["kurse"]:
         kid = str(kurs["id"])
         gruppe = kurs.get("gruppe", 0)
@@ -257,6 +286,15 @@ def build(config, offline=None, alt=""):
             beschr += ["", "Mehr Infos in Friedolin:", link]
 
             start, end = ev.get("DTSTART", ""), ev.get("DTEND", "")
+            exdates = [x for x in ev.get("EXDATE", "").split(",") if x.strip()]
+            # Abweichende Uhrzeit (z. B. c.t. laut Seminarplan) aus kurse.json: "zeit": "12:15-13:45"
+            zm = re.fullmatch(r"\s*(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2}):(\d{2})\s*", cfg.get("zeit", ""))
+            if zm and len(start) >= 15 and len(end) >= 15:
+                h1, m1, h2, m2 = map(int, zm.groups())
+                start = f"{start[:8]}T{h1:02d}{m1:02d}00"
+                end = f"{end[:8]}T{h2:02d}{m2:02d}00"
+                exdates = [x[:8] + start[8:] for x in exdates]
+                beschr.insert(len(beschr) - 3, f"Uhrzeit laut Seminarplan: {cfg['zeit']} (Friedolin: volle Stunde)")
             start_t = start[8:] if len(start) >= 15 else "T000000"
             end_t = end[8:] if len(end) >= 15 else start_t
             ausfall = {d: why for d, why in t.get("ausfall", [])}
@@ -264,8 +302,13 @@ def build(config, offline=None, alt=""):
                 if suchtext.lower() in titel.lower() and findet_statt_am(ev, datum):
                     ausfall.setdefault(datum, grund)
                     benutzt.add((datum, suchtext))
-            exdates = [x for x in ev.get("EXDATE", "").split(",") if x.strip()]
             exdates = [x for x in exdates if x[:8] not in ausfall]
+
+            sitzung = {}
+            for datum, suchtext, thema, details in sitzungen:
+                if suchtext.lower() in titel.lower() and findet_statt_am(ev, datum):
+                    sitzung[datum] = (thema, details)
+                    benutzt_s.add((datum, suchtext))
 
             ausfall_hier = {}
             if "RRULE" not in ev and start[:8] in ausfall:
@@ -273,6 +316,10 @@ def build(config, offline=None, alt=""):
                 beschr.insert(0, "⚠️ Fällt aus" + (f": {ausfall[start[:8]]}" if ausfall[start[:8]] else ""))
             else:
                 ausfall_hier = ausfall
+            if "RRULE" not in ev and start[:8] in sitzung and start[:8] not in ausfall:
+                thema, details = sitzung.pop(start[:8])
+                titel = f"{titel} · {thema}" if thema else titel
+                beschr = details + [""] + beschr
 
             lines = ["BEGIN:VEVENT", f"UID:{uid}@friedolin.uni-jena.de", "DTSTAMP:{STAMP}",
                      f"DTSTART;TZID={TZ}:{start}", f"DTEND;TZID={TZ}:{end}"]
@@ -285,10 +332,25 @@ def build(config, offline=None, alt=""):
                       f"DESCRIPTION:{esc(chr(10).join(beschr))}", f"URL:{link}", "END:VEVENT"]
             vevents.append(lines)
 
+            # Einzelne Sitzungen mit Thema/Film/Texten aus dem Seminarplan
+            if "RRULE" in ev:
+                for d, (thema, details) in sorted(sitzung.items()):
+                    if d in ausfall_hier or f"{d}{start_t}" in exdates:
+                        continue
+                    vevents.append([
+                        "BEGIN:VEVENT", f"UID:{uid}@friedolin.uni-jena.de", "DTSTAMP:{STAMP}",
+                        f"RECURRENCE-ID;TZID={TZ}:{d}{start_t}",
+                        f"DTSTART;TZID={TZ}:{d}{start_t}", f"DTEND;TZID={TZ}:{d}{end_t}",
+                        f"SUMMARY:{esc(f'{titel} · {thema}' if thema else titel)}", f"LOCATION:{esc(location)}",
+                        f"DESCRIPTION:{esc(chr(10).join(details + [''] + beschr))}", f"URL:{link}",
+                        "END:VEVENT"])
+
             for d, why in sorted(ausfall_hier.items()):
                 info_txt = ["⚠️ Dieser Termin fällt aus."]
                 if why:
                     info_txt.append(f"Grund/Hinweis: {why}")
+                if d in sitzung and sitzung[d][1]:
+                    info_txt += ["", "Laut Plan:"] + sitzung[d][1]
                 info_txt += ["", "Mehr Infos in Friedolin:", link]
                 vevents.append([
                     "BEGIN:VEVENT", f"UID:{uid}@friedolin.uni-jena.de", "DTSTAMP:{STAMP}",
@@ -303,6 +365,9 @@ def build(config, offline=None, alt=""):
     for datum, suchtext, _ in eigene_ausfaelle:
         if (datum, suchtext) not in benutzt:
             print(f"::warning::ausfaelle.txt: kein Termin '{suchtext}' am {datum[6:]}.{datum[4:6]}.{datum[:4]} gefunden")
+    for datum, suchtext, _, _ in sitzungen:
+        if (datum, suchtext) not in benutzt_s:
+            print(f"::warning::sitzungen.json: kein Termin '{suchtext}' am {datum[6:]}.{datum[4:6]}.{datum[:4]} gefunden")
 
     head = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//uni-kalender//Friedolin Sync//DE",
             "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
