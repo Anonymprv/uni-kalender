@@ -1,0 +1,7 @@
+# Ausfälle, die (noch) nicht in Friedolin stehen – z. B. aus Moodle oder per Mail.
+# Eine Zeile pro Ausfall:   Datum | Teil des Titels im Kalender | Grund (optional)
+# Beispiel:                 03.11.2026 | Tutorium | Dozent krank (Moodle)
+# Der Termin erscheint dann als „❌ Fällt aus“. Zeile löschen = Termin wieder normal.
+
+27.10.2026 | Marketing | laut Moodle
+28.10.2026 | Marketing | laut Moodle
