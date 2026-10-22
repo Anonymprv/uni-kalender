@@ -9,8 +9,8 @@
       "id": 259842,
       "titel": "Film & Medienkunst",
       "termine": {
-        "478771": { "titel": "Film & Medienkunst – Tutorium", "ort": "Ernst-Abbe-Platz 8, Seminarraum 208" },
-        "472921": { "titel": "Film & Medienkunst – Seminar", "ort": "Ernst-Abbe-Platz 8, Raum 208" }
+        "478771": { "titel": "Film & Medienkunst – Tutorium", "ort": "Ernst-Abbe-Platz 8, SR 208", "zeit": "10:15-11:45" },
+        "472921": { "titel": "Film & Medienkunst – Seminar", "ort": "Ernst-Abbe-Platz 8, SR 208", "zeit": "12:15-13:45" }
       }
     },
     {
