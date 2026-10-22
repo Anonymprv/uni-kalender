@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:260537472906@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 DTSTART;TZID=Europe/Berlin:20261019T140000
 DTEND;TZID=Europe/Berlin:20261019T160000
 RRULE:FREQ=WEEKLY;UNTIL=20270208T235900Z;BYDAY=MO
@@ -44,13 +44,13 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:259842478771@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 DTSTART;TZID=Europe/Berlin:20261020T100000
 DTEND;TZID=Europe/Berlin:20261020T120000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
 EXDATE;TZID=Europe/Berlin:20261222T100000,20261229T100000
 SUMMARY:Film & Medienkunst – Tutorium
-LOCATION:Ernst-Abbe-Platz 8\, Seminarraum 208
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
 DESCRIPTION:Basismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208
  \, Ernst-Abbe-Platz 8\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-j
  ena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=2598
@@ -61,13 +61,13 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:259842472921@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 DTSTART;TZID=Europe/Berlin:20261020T120000
 DTEND;TZID=Europe/Berlin:20261020T140000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
 EXDATE;TZID=Europe/Berlin:20261222T120000,20261229T120000
 SUMMARY:Film & Medienkunst – Seminar
-LOCATION:Ernst-Abbe-Platz 8\, Raum 208
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
 DESCRIPTION:Basismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, 
  EAP 8\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver
  /rds?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=we
@@ -78,7 +78,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474860@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 DTSTART;TZID=Europe/Berlin:20261020T160000
 DTEND;TZID=Europe/Berlin:20261020T180000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
@@ -95,7 +95,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474860@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 RECURRENCE-ID;TZID=Europe/Berlin:20261027T160000
 DTSTART;TZID=Europe/Berlin:20261027T160000
 DTEND;TZID=Europe/Berlin:20261027T180000
@@ -112,7 +112,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:258756482652@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 DTSTART;TZID=Europe/Berlin:20261021T160000
 DTEND;TZID=Europe/Berlin:20261021T180000
 SUMMARY:Marketing-Management (VL/Ü)
@@ -127,7 +127,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474861@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 DTSTART;TZID=Europe/Berlin:20261028T160000
 DTEND;TZID=Europe/Berlin:20261028T180000
 RRULE:FREQ=WEEKLY;UNTIL=20270210T235900Z;BYDAY=WE
@@ -144,7 +144,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474861@friedolin.uni-jena.de
-DTSTAMP:20261022T143337Z
+DTSTAMP:20261022T145352Z
 RECURRENCE-ID;TZID=Europe/Berlin:20261028T160000
 DTSTART;TZID=Europe/Berlin:20261028T160000
 DTEND;TZID=Europe/Berlin:20261028T180000
