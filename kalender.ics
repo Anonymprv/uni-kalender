@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:260537472906@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
+DTSTAMP:20261022T145451Z
 DTSTART;TZID=Europe/Berlin:20261019T140000
 DTEND;TZID=Europe/Berlin:20261019T160000
 RRULE:FREQ=WEEKLY;UNTIL=20270208T235900Z;BYDAY=MO
@@ -44,27 +44,281 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:259842478771@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
-DTSTART;TZID=Europe/Berlin:20261020T100000
-DTEND;TZID=Europe/Berlin:20261020T120000
+DTSTAMP:20261022T145451Z
+DTSTART;TZID=Europe/Berlin:20261020T101500
+DTEND;TZID=Europe/Berlin:20261020T114500
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
-EXDATE;TZID=Europe/Berlin:20261222T100000,20261229T100000
+EXDATE;TZID=Europe/Berlin:20261222T101500,20261229T101500
 SUMMARY:Film & Medienkunst – Tutorium
 LOCATION:Ernst-Abbe-Platz 8\, SR 208
 DESCRIPTION:Basismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208
- \, Ernst-Abbe-Platz 8\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-j
- ena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=2598
- 42&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+ \, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin: v
+ olle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qi
+ sserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&module
+ Call=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
 URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
  t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
  blishSubDir=veranstaltung
 END:VEVENT
 BEGIN:VEVENT
 UID:259842478771@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
-RECURRENCE-ID;TZID=Europe/Berlin:20261020T100000
-DTSTART;TZID=Europe/Berlin:20261020T100000
-DTEND;TZID=Europe/Berlin:20261020T120000
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261027T101500
+DTSTART;TZID=Europe/Berlin:20261027T101500
+DTEND;TZID=Europe/Berlin:20261027T114500
+SUMMARY:Film & Medienkunst – Tutorium · Visuelle Analyse I
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Visuelle Einheiten des Films\, filmanalyse.at\n\nBasismodul · 
+ Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208\, Ernst-Abbe-Platz 8\nUh
+ rzeit laut Seminarplan: 10:15-11:45 (Friedolin: volle Stunde)\n\nMehr Info
+ s in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpubl
+ ish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfF
+ ile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261103T101500
+DTSTART;TZID=Europe/Berlin:20261103T101500
+DTEND;TZID=Europe/Berlin:20261103T114500
+SUMMARY:Film & Medienkunst – Tutorium · Visuelle Analyse II
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Kamera – Technik und Ästhetik\n\nBasismodul · Nr. 147043\nA
+ lan Bade\nTutorium\, Seminarraum 208\, Ernst-Abbe-Platz 8\nUhrzeit laut Se
+ minarplan: 10:15-11:45 (Friedolin: volle Stunde)\n\nMehr Infos in Friedoli
+ n:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=in
+ it&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&p
+ ublishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261110T101500
+DTSTART;TZID=Europe/Berlin:20261110T101500
+DTEND;TZID=Europe/Berlin:20261110T114500
+SUMMARY:Film & Medienkunst – Tutorium · Vertiefung Visuelle Analyse I & 
+ II
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:\nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 2
+ 08\, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin:
+  volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/
+ qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&modu
+ leCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261117T101500
+DTSTART;TZID=Europe/Berlin:20261117T101500
+DTEND;TZID=Europe/Berlin:20261117T114500
+SUMMARY:Film & Medienkunst – Tutorium · Wiederholung
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Seminar entfällt (Dies Legendi)\, Tutorium: Wiederholung\n\nBa
+ sismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208\, Ernst-Abbe
+ -Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin: volle Stunde)\
+ n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?s
+ tate=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&
+ publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261124T101500
+DTSTART;TZID=Europe/Berlin:20261124T101500
+DTEND;TZID=Europe/Berlin:20261124T114500
+SUMMARY:Film & Medienkunst – Tutorium · Visuelle Analyse III
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Film und Bildformat\, Kadrierung\, Bildraum\n\nBasismodul · Nr
+ . 147043\nAlan Bade\nTutorium\, Seminarraum 208\, Ernst-Abbe-Platz 8\nUhrz
+ eit laut Seminarplan: 10:15-11:45 (Friedolin: volle Stunde)\n\nMehr Infos 
+ in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublis
+ h&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFil
+ e=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261201T101500
+DTSTART;TZID=Europe/Berlin:20261201T101500
+DTEND;TZID=Europe/Berlin:20261201T114500
+SUMMARY:Film & Medienkunst – Tutorium · Visuelle Analyse IV & V
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Montage\, Bild-/Ton-Schnitt\; Räumlichkeit\, Komposition\, Des
+ ign\, Farbe I\n\nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarra
+ um 208\, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedo
+ lin: volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena
+ .de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&
+ moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261208T101500
+DTSTART;TZID=Europe/Berlin:20261208T101500
+DTEND;TZID=Europe/Berlin:20261208T114500
+SUMMARY:Film & Medienkunst – Tutorium · Vertiefung Visuelle Analyse III
+ –V
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Fokus Bildebene des Films und Farbe II\nText: Marschall\, Susan
+ ne: Vorrede zum Farbenspiel des Kinos. In: Farbe im Kino\, Marburg 2009\, 
+ S. 9–42\n\nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 2
+ 08\, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin:
+  volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/
+ qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&modu
+ leCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261215T101500
+DTSTART;TZID=Europe/Berlin:20261215T101500
+DTEND;TZID=Europe/Berlin:20261215T114500
+SUMMARY:Film & Medienkunst – Tutorium · Auditive Analyse I
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Geschichte und Ästhetik\n\nBasismodul · Nr. 147043\nAlan Bade
+ \nTutorium\, Seminarraum 208\, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarpla
+ n: 10:15-11:45 (Friedolin: volle Stunde)\n\nMehr Infos in Friedolin:\nhttp
+ s://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfil
+ e=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&publishSu
+ bDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270105T101500
+DTSTART;TZID=Europe/Berlin:20270105T101500
+DTEND;TZID=Europe/Berlin:20270105T114500
+SUMMARY:Film & Medienkunst – Tutorium · Auditive Analyse II
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Tonarten\, Bild-Ton-Beziehung\, On/Off\, Exkurs Michel Chion\n\
+ nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208\, Ernst-A
+ bbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin: volle Stund
+ e)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rd
+ s?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=webIn
+ fo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270112T101500
+DTSTART;TZID=Europe/Berlin:20270112T101500
+DTEND;TZID=Europe/Berlin:20270112T114500
+SUMMARY:Film & Medienkunst – Tutorium · Vertiefung Auditive Analyse I & 
+ II
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:\nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 2
+ 08\, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin:
+  volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/
+ qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&modu
+ leCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270119T101500
+DTSTART;TZID=Europe/Berlin:20270119T101500
+DTEND;TZID=Europe/Berlin:20270119T114500
+SUMMARY:Film & Medienkunst – Tutorium · Analyse Schauspiel
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:\nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 2
+ 08\, Ernst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin:
+  volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/
+ qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&modu
+ leCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270126T101500
+DTSTART;TZID=Europe/Berlin:20270126T101500
+DTEND;TZID=Europe/Berlin:20270126T114500
+SUMMARY:Film & Medienkunst – Tutorium · Analyse Zeit
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Zeitkonstruktion\, Filmzeit als Montagephänomen\n\nBasismodul 
+ · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208\, Ernst-Abbe-Platz 8\
+ nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin: volle Stunde)\n\nMehr I
+ nfos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verp
+ ublish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&publishCo
+ nfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270202T101500
+DTSTART;TZID=Europe/Berlin:20270202T101500
+DTEND;TZID=Europe/Berlin:20270202T114500
+SUMMARY:Film & Medienkunst – Tutorium · Analyse Raum
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Exkurs Mark Nash\, Expanded Cinema\n\nBasismodul · Nr. 147043\
+ nAlan Bade\nTutorium\, Seminarraum 208\, Ernst-Abbe-Platz 8\nUhrzeit laut 
+ Seminarplan: 10:15-11:45 (Friedolin: volle Stunde)\n\nMehr Infos in Friedo
+ lin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=
+ init&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo
+ &publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270209T101500
+DTSTART;TZID=Europe/Berlin:20270209T101500
+DTEND;TZID=Europe/Berlin:20270209T114500
+SUMMARY:Film & Medienkunst – Tutorium · Vertiefung Zeit und Raum
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Vertiefung Zeit und Raum sowie Klärung offener Fragen zur Anal
+ yse\n\nBasismodul · Nr. 147043\nAlan Bade\nTutorium\, Seminarraum 208\, E
+ rnst-Abbe-Platz 8\nUhrzeit laut Seminarplan: 10:15-11:45 (Friedolin: volle
+  Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisser
+ ver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall
+ =webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842478771@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261020T101500
+DTSTART;TZID=Europe/Berlin:20261020T101500
+DTEND;TZID=Europe/Berlin:20261020T114500
 SUMMARY:❌ Fällt aus: Film & Medienkunst – Tutorium
 LOCATION:Ernst-Abbe-Platz 8\, SR 208
 DESCRIPTION:⚠️ Dieser Termin fällt aus.\nGrund/Hinweis: Kein Tutorium 
@@ -79,34 +333,347 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:259842472921@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
-DTSTART;TZID=Europe/Berlin:20261020T120000
-DTEND;TZID=Europe/Berlin:20261020T140000
+DTSTAMP:20261022T145451Z
+DTSTART;TZID=Europe/Berlin:20261020T121500
+DTEND;TZID=Europe/Berlin:20261020T134500
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
-EXDATE;TZID=Europe/Berlin:20261222T120000,20261229T120000
+EXDATE;TZID=Europe/Berlin:20261222T121500,20261229T121500
 SUMMARY:Film & Medienkunst – Seminar
 LOCATION:Ernst-Abbe-Platz 8\, SR 208
 DESCRIPTION:Basismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, 
- EAP 8\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver
- /rds?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=we
- bInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+ EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n\n
+ Mehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?stat
+ e=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&pub
+ lishConfFile=webInfo&publishSubDir=veranstaltung
 URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
  t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
  blishSubDir=veranstaltung
 END:VEVENT
 BEGIN:VEVENT
 UID:259842472921@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
-RECURRENCE-ID;TZID=Europe/Berlin:20261117T120000
-DTSTART;TZID=Europe/Berlin:20261117T120000
-DTEND;TZID=Europe/Berlin:20261117T140000
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261020T121500
+DTSTART;TZID=Europe/Berlin:20261020T121500
+DTEND;TZID=Europe/Berlin:20261020T134500
+SUMMARY:Film & Medienkunst – Seminar · Begrüßung & Einführung
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Gemeinsame Begrüßung und Einführung (Seminar und Tutorium)\n
+ Überblick zu Theorien und Aufbau Seminar\, Datenbank und Filmkanon\, Verb
+ indung Seminar und Tutorium\n\nBasismodul · Nr. 147043\nBernhard Groß\nS
+ eminar\, Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedoli
+ n: volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.d
+ e/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&mo
+ duleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261027T121500
+DTSTART;TZID=Europe/Berlin:20261027T121500
+DTEND;TZID=Europe/Berlin:20261027T134500
+SUMMARY:Film & Medienkunst – Seminar · Taxonomie des filmischen Universu
+ ms
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Film: SNOW WHITE AND THE SEVEN DWARFS (David Hand\, USA 1937)\n
+ Text: Souriau\, Etienne: Die Struktur des filmischen Universums und das Vo
+ kabular der Filmologie. In: montage AV 6/2\, 1997\, S. 140–157\nVertiefu
+ ng: Kerrigan\, Susan: The spectator in the film-maker: re-framing filmolog
+ y through creative film-making practices. In: Journal of Media Practice 17
+ /2-3\, 2016\, S. 186–198\n\nBasismodul · Nr. 147043\nBernhard Groß\nSe
+ minar\, Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin
+ : volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de
+ /qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&mod
+ uleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261103T121500
+DTSTART;TZID=Europe/Berlin:20261103T121500
+DTEND;TZID=Europe/Berlin:20261103T134500
+SUMMARY:Film & Medienkunst – Seminar · Filmanalytische Theorie
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Zentraler Referenztext\nFilm: JEZEBEL (William Wyler\, USA 1938
+ )\nText: Kappelhoff\, Hermann: Die Dauer der Empfindung. Von einer spezifi
+ schen Bewegungsdimension des Kinos. In: Bischof\, Margrit et al. (Hg.): e_
+ motion. Hamburg 2006\, S. 205–220\nVertiefung: Kappelhoff\, Hermann: Der
+  Bildraum des Kinos. Modulationen einer ästhetischen Erfahrungsform. In: 
+ Koch\, Gertrud (Hg.): Umwidmungen. Berlin 2005\, S. 138–149\n\nBasismodu
+ l · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, EAP 8\nUhrzeit laut 
+ Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n\nMehr Infos in Friedo
+ lin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=
+ init&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo
+ &publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261110T121500
+DTSTART;TZID=Europe/Berlin:20261110T121500
+DTEND;TZID=Europe/Berlin:20261110T134500
+SUMMARY:Film & Medienkunst – Seminar · Analyse-Übung I
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Analyse-Übung Studierende I\nFilme: Vertiefung SNOW WHITE AND 
+ THE SEVEN DWARFS & JEZEBEL\nAnalytische Übung zu Kappelhoffs „Die Dauer
+  der Empfindung“\, max. 2 studentische Analyse-Übungen\, gemeinsame Bes
+ prechung und Fazit\n\nBasismodul · Nr. 147043\nBernhard Groß\nSeminar\, 
+ Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin: volle 
+ Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserv
+ er/rds?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=
+ webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261124T121500
+DTSTART;TZID=Europe/Berlin:20261124T121500
+DTEND;TZID=Europe/Berlin:20261124T134500
+SUMMARY:Film & Medienkunst – Seminar · Realismustheorie des Films
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Darstellung von Realität – Referenz Kappelhoff: Bewegung im 
+ Film\nFilm: PAISÀ (Roberto Rossellini\, Italien 1946)\nText: Kracauer\, S
+ iegfried: Theorie des Films. Die Errettung der äußeren Wirklichkeit. Fra
+ nkfurt a. M.\, S. 84–112 sowie 461–64\, 473–77 (zudem: Studium Buchg
+ liederung)\nVertiefung: Koch\, Gertrud: Raum\, Zeit und Apparat. Das optis
+ che Medium\, „Theorie des Films“. In: Siegfried Kracauer zur Einführu
+ ng. Hamburg 2012\, S. 128–150\n\nBasismodul · Nr. 147043\nBernhard Gro
+ ß\nSeminar\, Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Fri
+ edolin: volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-j
+ ena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=2598
+ 42&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261201T121500
+DTSTART;TZID=Europe/Berlin:20261201T121500
+DTEND;TZID=Europe/Berlin:20261201T134500
+SUMMARY:Film & Medienkunst – Seminar · Formalistische Filmtheorie
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Herstellung filmischer Realität – Referenz Kappelhoff: Beweg
+ ung des Films\nFilm: PANZERKREUZER POTEMKIN (Sergej Eisenstein\, UdSSR 192
+ 5)\nText: Eisenstein\, Sergej: Montage der Filmattraktionen. In: Bulgakowa
+ \, Oksana\; Hochmuth\, Dietmar (Hg.): Sergej Eisenstein. Das dynamische Qu
+ adrat. Leipzig: Reclam 1988\, S. 17–45\nVertiefung: Bulgakowa\, Oksana: 
+ Sergej Eisenstein – Drei Utopien: Architekturentwürfe zur Filmtheorie. 
+ Berlin: PotemkinPress 1996\, S. 38–53\n\nBasismodul · Nr. 147043\nBernh
+ ard Groß\nSeminar\, Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:
+ 45 (Friedolin: volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedoli
+ n.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publish
+ id=259842&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranst
+ altung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261208T121500
+DTSTART;TZID=Europe/Berlin:20261208T121500
+DTEND;TZID=Europe/Berlin:20261208T134500
+SUMMARY:Film & Medienkunst – Seminar · Analyse-Übung II
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Analyse-Übung Studierende II\nFilme: Vertiefung PAISÀ & PANZE
+ RKREUZER POTEMKIN\nMax. 3 studentische Analyse-Übungen (ca. 2 Min. Filmau
+ sschnitt + 10 Min. Analyse)\, gemeinsame Besprechung und Fazit\n\nBasismod
+ ul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, EAP 8\nUhrzeit laut
+  Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n\nMehr Infos in Fried
+ olin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status
+ =init&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInf
+ o&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261215T121500
+DTSTART;TZID=Europe/Berlin:20261215T121500
+DTEND;TZID=Europe/Berlin:20261215T134500
+SUMMARY:Film & Medienkunst – Seminar · Neubewertung des frühen Kinos
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Spektakel – Referenz Kappelhoff: Bewegung der Zuschauer I\nFi
+ lme: Kompilation früher Filme – L’ARRIVÉE D’UN TRAIN EN GARE DE LA
+  CIOTAT (Lumière\, FRA 1896)\, ESCAMOTAGE D’UNE DAME CHEZ ROBERT-HOUDIN
+  (Méliès\, FRA 1896)\, LE VOYAGE DANS LA LUNE (Méliès\, FRA 1902)\, TH
+ E GREAT TRAIN ROBBERY (Porter\, USA 1903)\, THE GAY SHOE CLERK (Porter\, U
+ SA 1904)\nText: Gunning\, Tom: Das Kino der Attraktionen. Der frühe Film\
+ , seine Zuschauer und die Avantgarde. In: Meteor. Texte zum Laufbild. Wien
+  1996\, S. 25–34\nVertiefung: Elsaesser\, Thomas: The New Film History a
+ s Media Archaeology. In: Histoires croisées des images 14/2-3\, 2004\, S.
+  75–117\n\nBasismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\
+ , EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n
+ \nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?st
+ ate=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&p
+ ublishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270105T121500
+DTSTART;TZID=Europe/Berlin:20270105T121500
+DTEND;TZID=Europe/Berlin:20270105T134500
+SUMMARY:Film & Medienkunst – Seminar · Feministisch-ideologiekritische F
+ ilmtheorie
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Film als psychischer Apparat – Referenz Kappelhoff: Bewegung 
+ der Zuschauer II\nFilm: CLÉO DE 5 À 7 (Agnès Varda\, FR 1962)\nText: Mu
+ lvey\, Laura: Visuelle Lust und narratives Kino. In: Weissberg\, Liliane (
+ Hg.): Weiblichkeit als Maskerade. Frankfurt/Main: Fischer 1994\, S. 48–6
+ 5\nVertiefung: Baudry\, Jean-Louis: Das Dispositiv: Metapsychologische Bet
+ rachtungen des Realitätseindrucks. In: Kursbuch Medienkultur\, München: 
+ DVA 2008\, S. 381–404\n\nBasismodul · Nr. 147043\nBernhard Groß\nSemin
+ ar\, Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin: v
+ olle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qi
+ sserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&module
+ Call=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270112T121500
+DTSTART;TZID=Europe/Berlin:20270112T121500
+DTEND;TZID=Europe/Berlin:20270112T134500
+SUMMARY:Film & Medienkunst – Seminar · Analyse-Übung III
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Analyse-Übung Studierende III\nFilme: Vertiefung Kompilation f
+ rüher Filme & CLÉO DE 5 À 7\nMax. 3 studentische Analyse-Übungen (ca. 
+ 2 Min. Filmausschnitt + 10 Min. Analyse)\, gemeinsame Besprechung und Fazi
+ t\n\nBasismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, EAP 8\
+ nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n\nMehr I
+ nfos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verp
+ ublish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&publishCo
+ nfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270119T121500
+DTSTART;TZID=Europe/Berlin:20270119T121500
+DTEND;TZID=Europe/Berlin:20270119T134500
+SUMMARY:Film & Medienkunst – Seminar · Theorie des Filmesehens
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Physische Affektion – Referenz Kappelhoff: Bewegung der Zusch
+ auer III\nFilm: STRANGE DAYS (Kathryn Bigelow\, USA 1995)\nText: Sobchack\
+ , Vivian: Phenomenology of the Film Experience. In: The Address of the Eye
+ . Princeton\, NJ 1992\, S. 3–26\nVertiefung: Bonnemann\, Jens: Vivian So
+ bchack (*1940) – das leibliche Widerfahrnis der Filmrezeption. In: Filmt
+ heorie. Eine Einführung. Berlin 2019\, S. 273–300\n\nBasismodul · Nr. 
+ 147043\nBernhard Groß\nSeminar\, Raum 208\, EAP 8\nUhrzeit laut Seminarpl
+ an: 12:15-13:45 (Friedolin: volle Stunde)\n\nMehr Infos in Friedolin:\nhtt
+ ps://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfi
+ le=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&publishS
+ ubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270126T121500
+DTSTART;TZID=Europe/Berlin:20270126T121500
+DTEND;TZID=Europe/Berlin:20270126T134500
+SUMMARY:Film & Medienkunst – Seminar · Fotografie und Medienkunst
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Film und Zeit – Referenz Kappelhoff: Historisches Verständni
+ s filmischer Bewegung\nFilm: SEDMIKRÁSKY / TAUSENDSCHÖNCHEN (Vera Chytil
+ ová\, CR 1966)\nSichtung ausgewählter Fotografien der Objektdatenbank\nT
+ ext: Bazin\, André: Ontologie des fotografischen Bildes. In: Fischer\, Ro
+ bert (Hg.): Was ist Film? Berlin: Alexander Verlag 2004\, S. 33–42\nVert
+ iefung: Geimer\, Peter: Kunsttheoretische Bestimmungen. Die Fotografie im 
+ System der Künste. In: Theorien der Fotografie zur Einführung. Hamburg: 
+ Junius 2009\, S. 170–217\n\nBasismodul · Nr. 147043\nBernhard Groß\nSe
+ minar\, Raum 208\, EAP 8\nUhrzeit laut Seminarplan: 12:15-13:45 (Friedolin
+ : volle Stunde)\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de
+ /qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=259842&mod
+ uleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270202T121500
+DTSTART;TZID=Europe/Berlin:20270202T121500
+DTEND;TZID=Europe/Berlin:20270202T134500
+SUMMARY:Film & Medienkunst – Seminar · Dokumentarische Filmformen
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Dokumentarische und nicht-kinobasierte Filmformen\nFilm: WINTER
+  ADÉ (Helke Misselwitz\, DDR 1989)\nText: Steyerl\, Hito: Die dokumentari
+ sche Unschärferelation. Was ist Dokumentarismus? In: Die Farbe der Wahrhe
+ it. Dokumentarismus im Kunstfeld. Wien/Berlin 2008\, S. 7–17\nVertiefung
+ : Nash\, Mark: Art and Cinema: Some Critical Reflections. In: Leighton\, T
+ anya (Hg.): Art and the Moving Image. London: Tate 2008\, S. 444–459\n\n
+ Basismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, EAP 8\nUhrz
+ eit laut Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n\nMehr Infos 
+ in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpublis
+ h&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFil
+ e=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20270209T121500
+DTSTART;TZID=Europe/Berlin:20270209T121500
+DTEND;TZID=Europe/Berlin:20270209T134500
+SUMMARY:Film & Medienkunst – Seminar · Analyse-Übung IV & Abschluss
+LOCATION:Ernst-Abbe-Platz 8\, SR 208
+DESCRIPTION:Analyse-Übung Studierende IV / Abschluss und Fazit\nFilme: Ver
+ tiefung STRANGE DAYS\, SEDMIKRÁSKY\, WINTER ADÉ\nMax. 2 studentische Ana
+ lyse-Übungen\, gemeinsame Besprechung\, Resümee und Prüfungsbesprechung
+ \n\nBasismodul · Nr. 147043\nBernhard Groß\nSeminar\, Raum 208\, EAP 8\n
+ Uhrzeit laut Seminarplan: 12:15-13:45 (Friedolin: volle Stunde)\n\nMehr In
+ fos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds?state=verpu
+ blish&status=init&vmfile=no&publishid=259842&moduleCall=webInfo&publishCon
+ fFile=webInfo&publishSubDir=veranstaltung
+URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
+ t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
+ blishSubDir=veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:259842472921@friedolin.uni-jena.de
+DTSTAMP:20261022T145451Z
+RECURRENCE-ID;TZID=Europe/Berlin:20261117T121500
+DTSTART;TZID=Europe/Berlin:20261117T121500
+DTEND;TZID=Europe/Berlin:20261117T134500
 SUMMARY:❌ Fällt aus: Film & Medienkunst – Seminar
 LOCATION:Ernst-Abbe-Platz 8\, SR 208
 DESCRIPTION:⚠️ Dieser Termin fällt aus.\nGrund/Hinweis: Dies Legendi 
- – kein Seminar (Seminarplan)\n\nMehr Infos in Friedolin:\nhttps://friedo
- lin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publi
- shid=259842&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veran
- staltung
+ – kein Seminar (Seminarplan)\n\nLaut Plan:\nDies Legendi – kein Semina
+ r\n\nMehr Infos in Friedolin:\nhttps://friedolin.uni-jena.de/qisserver/rds
+ ?state=verpublish&status=init&vmfile=no&publishid=259842&moduleCall=webInf
+ o&publishConfFile=webInfo&publishSubDir=veranstaltung
 URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
  t&vmfile=no&publishid=259842&moduleCall=webInfo&publishConfFile=webInfo&pu
  blishSubDir=veranstaltung
@@ -114,7 +681,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474860@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
+DTSTAMP:20261022T145451Z
 DTSTART;TZID=Europe/Berlin:20261020T160000
 DTEND;TZID=Europe/Berlin:20261020T180000
 RRULE:FREQ=WEEKLY;UNTIL=20270209T235900Z;BYDAY=TU
@@ -131,7 +698,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474860@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
+DTSTAMP:20261022T145451Z
 RECURRENCE-ID;TZID=Europe/Berlin:20261027T160000
 DTSTART;TZID=Europe/Berlin:20261027T160000
 DTEND;TZID=Europe/Berlin:20261027T180000
@@ -148,7 +715,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:258756482652@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
+DTSTAMP:20261022T145451Z
 DTSTART;TZID=Europe/Berlin:20261021T160000
 DTEND;TZID=Europe/Berlin:20261021T180000
 SUMMARY:Marketing-Management (VL/Ü)
@@ -163,7 +730,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474861@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
+DTSTAMP:20261022T145451Z
 DTSTART;TZID=Europe/Berlin:20261028T160000
 DTEND;TZID=Europe/Berlin:20261028T180000
 RRULE:FREQ=WEEKLY;UNTIL=20270210T235900Z;BYDAY=WE
@@ -180,7 +747,7 @@ URL:https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=ini
 END:VEVENT
 BEGIN:VEVENT
 UID:258756474861@friedolin.uni-jena.de
-DTSTAMP:20261022T145411Z
+DTSTAMP:20261022T145451Z
 RECURRENCE-ID;TZID=Europe/Berlin:20261028T160000
 DTSTART;TZID=Europe/Berlin:20261028T160000
 DTEND;TZID=Europe/Berlin:20261028T180000
